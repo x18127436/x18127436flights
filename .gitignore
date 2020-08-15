@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore tests
+/app/assets/javascripts/application (copy).js
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
