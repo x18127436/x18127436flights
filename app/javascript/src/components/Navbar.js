@@ -75,8 +75,9 @@ const Navbar = (props) => {
             <Nav>
               <Left>
                 <Logo><Link to="/">Flights</Link></Logo>
+                <a href="https://x18127436travelplanner.herokuapp.com/" class="button"> _ or Go to Travel Planner</a>
               </Left>
-              <Right>
+              <Right> 
                 <Menu>
                     { 
                     isAuth ? 
