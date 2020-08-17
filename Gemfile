@@ -25,6 +25,7 @@ gem 'graphql'
 gem 'graphql-batch'
 gem 'graphiql-rails', group: :development
 gem 'pry'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'factory_bot_rails'

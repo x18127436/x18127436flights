@@ -1,6 +1,7 @@
 module Api
   module V1
     class AirlinesController < ApiController
+      #protect_from_forgery with: :null_session
       before_action :authenticate, only: %i[create update destroy]
 
       # GET /api/v1/airlines
