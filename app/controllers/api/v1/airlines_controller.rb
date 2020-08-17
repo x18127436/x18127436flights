@@ -1,8 +1,9 @@
 module Api
   module V1
     class AirlinesController < ApiController
+      skip_before_action :verify_authenticity_token
       #protect_from_forgery with: :null_session
-      before_action :authenticate, only: %i[create update destroy]
+      #before_action :authenticate, only: %i[create update destroy]
 
       # GET /api/v1/airlines
       def index
