@@ -1,7 +1,8 @@
 module Api
   module V1
     class ReviewsController < ApiController
-      before_action :authenticate
+      skip_before_action :verify_authenticity_token
+      #before_action :authenticate
       #protect_from_forgery with: :null_session
 
       # POST /api/v1/reviews
